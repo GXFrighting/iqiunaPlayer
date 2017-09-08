@@ -57,7 +57,7 @@ int main(int argc, char **argv)
 
     /* Give over control to run loop, SDLUIKitDelegate will handle most things from here */
     @autoreleasepool {
-        UIApplicationMain(argc, argv, nil, [SDLUIKitDelegate getAppDelegateClassName]);
+        UIApplicationMain(argc, argv, nil, @"AppDelegate");
     }
 
     /* free the memory we used to hold copies of argc and argv */
@@ -361,7 +361,7 @@ SDL_LoadLaunchImageNamed(NSString *name, int screenh)
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSBundle *bundle = [NSBundle mainBundle];
-    
+
 #if SDL_IPHONE_LAUNCHSCREEN
     /* The normal launch screen is displayed until didFinishLaunching returns,
      * but SDL_main is called after that happens and there may be a noticeable

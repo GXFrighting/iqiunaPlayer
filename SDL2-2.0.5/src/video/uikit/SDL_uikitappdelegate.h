@@ -31,8 +31,6 @@
 
 @interface SDLUIKitDelegate : NSObject<UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-
 + (id)sharedAppDelegate;
 + (NSString *)getAppDelegateClassName;
 
