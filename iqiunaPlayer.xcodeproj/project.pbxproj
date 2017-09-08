@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		23DF1404344137271EAD3C40 /* libPods-iqiunaPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1339A4107DF847EFCFB63ED0 /* libPods-iqiunaPlayer.a */; };
+		E9074D381F623A1000F07F82 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94DBCAD1F61522A007B0D60 /* AudioToolbox.framework */; };
+		E9074D391F623A2400F07F82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94DBCAF1F615232007B0D60 /* CoreGraphics.framework */; };
+		E9074D3B1F623A5500F07F82 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94DBCB31F61523D007B0D60 /* QuartzCore.framework */; };
+		E9074D3C1F623A6300F07F82 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94DBCB11F615238007B0D60 /* OpenGLES.framework */; };
+		E9074D3F1F623AB100F07F82 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94DBCA91F61521C007B0D60 /* CoreMotion.framework */; };
+		E9074D421F623AF000F07F82 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94DBCAB1F615223007B0D60 /* CoreAudio.framework */; };
+		E9074D721F6242CB00F07F82 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94DBCA71F615215007B0D60 /* GameController.framework */; };
+		E9074D801F62685B00F07F82 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9074D7D1F62684C00F07F82 /* libSDL2.a */; };
+		E9074D811F6268FF00F07F82 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94DBCA51F61520C007B0D60 /* AVFoundation.framework */; };
 		E942B1661F56C56500ECAA94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E942B1651F56C56500ECAA94 /* main.m */; };
 		E942B1691F56C56500ECAA94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E942B1681F56C56500ECAA94 /* AppDelegate.m */; };
 		E942B16C1F56C56500ECAA94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942B16B1F56C56500ECAA94 /* ViewController.m */; };
@@ -16,10 +25,30 @@
 		E942B1741F56C56500ECAA94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E942B1721F56C56500ECAA94 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E9074D7C1F62684C00F07F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9074D761F62684C00F07F82 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD6526630DE8FCCB002AD96B;
+			remoteInfo = libSDL;
+		};
+		E9074D7E1F62684C00F07F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9074D761F62684C00F07F82 /* SDL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FAB598141BB5C1B100BE72C5;
+			remoteInfo = "libSDL-tv";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1339A4107DF847EFCFB63ED0 /* libPods-iqiunaPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iqiunaPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA4F2C8819B1B7E5362FF1F /* Pods-iqiunaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iqiunaPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iqiunaPlayer/Pods-iqiunaPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		5B8B7D69272BCA8DA5A0925C /* Pods-iqiunaPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iqiunaPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iqiunaPlayer/Pods-iqiunaPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		E9074D431F623B2C00F07F82 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		E9074D451F623B3300F07F82 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E9074D761F62684C00F07F82 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "SDL2-2.0.5/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
 		E942B1611F56C56500ECAA94 /* iqiunaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iqiunaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E942B1651F56C56500ECAA94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E942B1671F56C56500ECAA94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +76,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9074D811F6268FF00F07F82 /* AVFoundation.framework in Frameworks */,
+				E9074D801F62685B00F07F82 /* libSDL2.a in Frameworks */,
+				E9074D721F6242CB00F07F82 /* GameController.framework in Frameworks */,
+				E9074D421F623AF000F07F82 /* CoreAudio.framework in Frameworks */,
+				E9074D3F1F623AB100F07F82 /* CoreMotion.framework in Frameworks */,
+				E9074D3C1F623A6300F07F82 /* OpenGLES.framework in Frameworks */,
+				E9074D3B1F623A5500F07F82 /* QuartzCore.framework in Frameworks */,
+				E9074D391F623A2400F07F82 /* CoreGraphics.framework in Frameworks */,
+				E9074D381F623A1000F07F82 /* AudioToolbox.framework in Frameworks */,
 				23DF1404344137271EAD3C40 /* libPods-iqiunaPlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +104,8 @@
 		D69FAB743B1502165E835C0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9074D451F623B3300F07F82 /* libc++.tbd */,
+				E9074D431F623B2C00F07F82 /* libc.tbd */,
 				E94DBCB71F61529B007B0D60 /* Foundation.framework */,
 				E94DBCB51F615296007B0D60 /* UIKit.framework */,
 				E94DBCB31F61523D007B0D60 /* QuartzCore.framework */,
@@ -81,9 +121,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E9074D311F6239B300F07F82 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E9074D321F6239C800F07F82 /* Vendors */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E9074D321F6239C800F07F82 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		E9074D771F62684C00F07F82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9074D7D1F62684C00F07F82 /* libSDL2.a */,
+				E9074D7F1F62684C00F07F82 /* libSDL2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E942B1581F56C56500ECAA94 = {
 			isa = PBXGroup;
 			children = (
+				E9074D761F62684C00F07F82 /* SDL.xcodeproj */,
 				E942B1631F56C56500ECAA94 /* iqiunaPlayer */,
 				E942B1621F56C56500ECAA94 /* Products */,
 				1BB702BFFDD3ABE3997E3CD6 /* Pods */,
@@ -102,6 +167,7 @@
 		E942B1631F56C56500ECAA94 /* iqiunaPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				E9074D311F6239B300F07F82 /* Main */,
 				E942B1671F56C56500ECAA94 /* AppDelegate.h */,
 				E942B1681F56C56500ECAA94 /* AppDelegate.m */,
 				E942B16A1F56C56500ECAA94 /* ViewController.h */,
@@ -173,12 +239,35 @@
 			mainGroup = E942B1581F56C56500ECAA94;
 			productRefGroup = E942B1621F56C56500ECAA94 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E9074D771F62684C00F07F82 /* Products */;
+					ProjectRef = E9074D761F62684C00F07F82 /* SDL.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E942B1601F56C56500ECAA94 /* iqiunaPlayer */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E9074D7D1F62684C00F07F82 /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = E9074D7C1F62684C00F07F82 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E9074D7F1F62684C00F07F82 /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = E9074D7E1F62684C00F07F82 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E942B15F1F56C56500ECAA94 /* Resources */ = {
@@ -372,19 +461,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 494Z7T97T8;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
-					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
-					"\"${PROJECT_DIR}/SDL2/include\"",
+					"\"${SRCROOT}/SDL2-2.0.5/include\"",
+					"\"${SRCROOT}/SDL2-2.0.5/src/video/uikit\"",
 				);
 				INFOPLIST_FILE = iqiunaPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/iqiunaPlayer",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jiang.iqiunaPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -396,19 +482,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 494Z7T97T8;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
-					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
-					"\"${PROJECT_DIR}/SDL2/include\"",
+					"\"${SRCROOT}/SDL2-2.0.5/include\"",
+					"\"${SRCROOT}/SDL2-2.0.5/src/video/uikit\"",
 				);
 				INFOPLIST_FILE = iqiunaPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/iqiunaPlayer",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jiang.iqiunaPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
